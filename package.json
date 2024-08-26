@@ -1,0 +1,13 @@
+{
+  "name": "quipuautomationtask",
+  "version": "1.0.0",
+  "description": "Quipu Automation Task",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Dragan Petrovski",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^22.5.0"
+  }
+}
