@@ -1,6 +1,3 @@
 export default {
-    inStockProduct: "Printed Summer Dress"
+  inStockProduct: "Printed Summer Dress",
 };
-
-
-  

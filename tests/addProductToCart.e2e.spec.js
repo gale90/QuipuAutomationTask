@@ -1,14 +1,12 @@
 import products from "../data/products.js";
 import {test, expect} from "../fixtures/fixtures.js"
 
-
 test.beforeEach(async ({ page, loginClass, myAccountClass }) => {
   await loginClass.navigateToHomepage()
   await loginClass.loginUser()
   expect(page.url()).toContain('my-account');
   await expect(await myAccountClass.getWelcomeMessage()).toBeVisible()
 });
-
 
 test('Search for product, add to cart and verify that product was added to cart', {tag: '@e2e'}, async ({ page, baseClass, productClass, shoppingCartClass }) => {
   await baseClass.searchForProduct()

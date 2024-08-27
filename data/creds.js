@@ -1,7 +1,4 @@
 export default {
-    email: "automation@tester.com",
-    password: "letsautomateG@1e"
+  email: "automation@tester.com",
+  password: "letsautomateG@1e",
 };
-
-
-  
