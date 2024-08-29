@@ -10,7 +10,7 @@ test.beforeEach(async ({ page, loginClass, myAccountClass }) => {
 
 test('Search for product, add to cart and verify that product was added to cart', {tag: '@e2e'}, async ({ page, baseClass, productClass, shoppingCartClass }) => {
   await baseClass.searchForProduct()
-  expect(page.url()).toContain('controller=product');
+  expect(await page.title()).toContain(products.inStockProduct); //changed to verify title of product instead the current url
   await expect(await productClass.getProductTitle()).toBeVisible() 
   
   // add to cart
